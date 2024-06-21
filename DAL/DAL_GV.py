@@ -14,7 +14,7 @@ def addGV(hoTen, khoa, chuyenMon, chucVu, ngaySinh, gioiTinh, soDT, diaChi):
     try:
         conn = ConnectDB.Connect()
         cs = conn.cursor()
-        new_GV = ("GV"+(str)(ConnectDB.generateNew("tblgiangvien")), hoTen, khoa, chuyenMon, chucVu, ngaySinh, gioiTinh, soDT, diaChi)
+        new_GV = ("GV"+(str)(ConnectDB.generateNew("tblgiangvien", "maGV", "GV")), hoTen, khoa, chuyenMon, chucVu, ngaySinh, gioiTinh, soDT, diaChi)
         qr = "INSERT INTO tblgiangvien (maGV, hoTen, maKhoa, chuyenMon, chucVu, ngaySinh, gioiTinh, soDT, diaChi) values ( %s, %s, %s, %s, %s, %s, %s, %s, %s)"
         cs.execute(qr, new_GV)
         kt = conn.commit()

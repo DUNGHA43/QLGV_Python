@@ -1291,6 +1291,35 @@ background-color: rgb(150, 150, 150);</string>
           <string notr="true">background-color: rgb(255, 255, 255);</string>
          </property>
         </widget>
+        <widget class="QLineEdit" name="txtMaGV_PCGD">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="geometry">
+          <rect>
+           <x>360</x>
+           <y>80</y>
+           <width>16</width>
+           <height>20</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="txtmaPCGD">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="geometry">
+          <rect>
+           <x>400</x>
+           <y>70</y>
+           <width>16</width>
+           <height>20</height>
+          </rect>
+         </property>
+        </widget>
+        <zorder>txtmaPCGD</zorder>
+        <zorder>txtMaGV_PCGD</zorder>
+        <zorder>tbDSPCGD</zorder>
        </widget>
        <widget class="QPushButton" name="btnThem_PCGD">
         <property name="geometry">
@@ -1424,7 +1453,7 @@ background-color: rgb(225, 225, 225);
           <rect>
            <x>50</x>
            <y>30</y>
-           <width>47</width>
+           <width>71</width>
            <height>21</height>
           </rect>
          </property>
@@ -1510,7 +1539,7 @@ background-color: rgb(225, 225, 225);
           <string>Ghi chú:</string>
          </property>
         </widget>
-        <widget class="QComboBox" name="comboBox_12">
+        <widget class="QComboBox" name="txtPCGD_QLTD">
          <property name="geometry">
           <rect>
            <x>120</x>
@@ -1523,7 +1552,7 @@ background-color: rgb(225, 225, 225);
           <string notr="true">background-color: rgb(255, 255, 255);</string>
          </property>
         </widget>
-        <widget class="QComboBox" name="comboBox_13">
+        <widget class="QComboBox" name="txtKetQua_QLTD">
          <property name="geometry">
           <rect>
            <x>320</x>
@@ -1535,8 +1564,18 @@ background-color: rgb(225, 225, 225);
          <property name="styleSheet">
           <string notr="true">background-color: rgb(255, 255, 255);</string>
          </property>
+         <item>
+          <property name="text">
+           <string>Chưa hoàn thành</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Đã hoàn thành</string>
+          </property>
+         </item>
         </widget>
-        <widget class="QLineEdit" name="lineEdit_9">
+        <widget class="QLineEdit" name="txtSoTietNghi">
          <property name="geometry">
           <rect>
            <x>120</x>
@@ -1549,7 +1588,7 @@ background-color: rgb(225, 225, 225);
           <string notr="true">background-color: rgb(255, 255, 255);</string>
          </property>
         </widget>
-        <widget class="QDateEdit" name="dateEdit_4">
+        <widget class="QDateEdit" name="txtNgayNghi">
          <property name="geometry">
           <rect>
            <x>120</x>
@@ -1562,7 +1601,7 @@ background-color: rgb(225, 225, 225);
           <string notr="true">background-color: rgb(255, 255, 255);</string>
          </property>
         </widget>
-        <widget class="QDateEdit" name="dateEdit_5">
+        <widget class="QDateEdit" name="txtNgayBu">
          <property name="geometry">
           <rect>
            <x>320</x>
@@ -1575,7 +1614,7 @@ background-color: rgb(225, 225, 225);
           <string notr="true">background-color: rgb(255, 255, 255);</string>
          </property>
         </widget>
-        <widget class="QLineEdit" name="lineEdit_10">
+        <widget class="QLineEdit" name="txtSoTietBu">
          <property name="geometry">
           <rect>
            <x>320</x>
@@ -1588,7 +1627,7 @@ background-color: rgb(225, 225, 225);
           <string notr="true">background-color: rgb(255, 255, 255);</string>
          </property>
         </widget>
-        <widget class="QPlainTextEdit" name="plainTextEdit_2">
+        <widget class="QPlainTextEdit" name="txtGhiChu_QLTD">
          <property name="geometry">
           <rect>
            <x>500</x>
@@ -1627,7 +1666,7 @@ background-color: rgb(225, 225, 225);
         <property name="title">
          <string>Thông tin tiết dạy</string>
         </property>
-        <widget class="QTableWidget" name="tableWidget_3">
+        <widget class="QTableWidget" name="tbDSQLTD">
          <property name="geometry">
           <rect>
            <x>10</x>
@@ -1640,8 +1679,23 @@ background-color: rgb(225, 225, 225);
           <string notr="true">background-color: rgb(255, 255, 255);</string>
          </property>
         </widget>
+        <widget class="QLineEdit" name="txtMaGS">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="geometry">
+          <rect>
+           <x>340</x>
+           <y>80</y>
+           <width>21</width>
+           <height>20</height>
+          </rect>
+         </property>
+        </widget>
+        <zorder>txtMaGS</zorder>
+        <zorder>tbDSQLTD</zorder>
        </widget>
-       <widget class="QPushButton" name="pushButton_13">
+       <widget class="QPushButton" name="btnThemQLTD">
         <property name="geometry">
          <rect>
           <x>20</x>
@@ -1660,7 +1714,7 @@ background-color: rgb(225, 225, 225);
          <string>Thêm</string>
         </property>
        </widget>
-       <widget class="QPushButton" name="pushButton_14">
+       <widget class="QPushButton" name="btnSuaQLTD">
         <property name="geometry">
          <rect>
           <x>110</x>
@@ -1679,7 +1733,7 @@ background-color: rgb(225, 225, 225);
          <string>Sửa</string>
         </property>
        </widget>
-       <widget class="QPushButton" name="pushButton_15">
+       <widget class="QPushButton" name="btnXoaQLTD">
         <property name="geometry">
          <rect>
           <x>200</x>
@@ -1698,7 +1752,7 @@ background-color: rgb(225, 225, 225);
          <string>Xóa</string>
         </property>
        </widget>
-       <widget class="QPushButton" name="pushButton_16">
+       <widget class="QPushButton" name="btnTimKiem_QLTD">
         <property name="geometry">
          <rect>
           <x>640</x>
@@ -1717,7 +1771,7 @@ background-color: rgb(225, 225, 225);
          <string>Tìm kiếm</string>
         </property>
        </widget>
-       <widget class="QLineEdit" name="lineEdit_8">
+       <widget class="QLineEdit" name="txtTim_QLTD">
         <property name="geometry">
          <rect>
           <x>422</x>
@@ -1748,21 +1802,170 @@ background-color: rgb(225, 225, 225);
        </widget>
       </widget>
       <widget class="QWidget" name="TK_GUI">
-       <widget class="QLabel" name="label_2">
+       <widget class="QLabel" name="label_33">
         <property name="geometry">
          <rect>
-          <x>310</x>
-          <y>250</y>
-          <width>47</width>
-          <height>13</height>
+          <x>270</x>
+          <y>20</y>
+          <width>201</width>
+          <height>51</height>
          </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>30</pointsize>
+         </font>
         </property>
         <property name="styleSheet">
          <string notr="true">color: rgb(255, 255, 255);</string>
         </property>
         <property name="text">
-         <string>Thống kê</string>
+         <string>THỐNG KÊ</string>
         </property>
+       </widget>
+       <widget class="QGroupBox" name="groupBox_9">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>170</y>
+          <width>681</width>
+          <height>331</height>
+         </rect>
+        </property>
+        <property name="title">
+         <string>Danh sách thông tin:</string>
+        </property>
+        <widget class="QTableWidget" name="tbDSTK">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>20</y>
+           <width>661</width>
+           <height>301</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(255, 255, 255);</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QGroupBox" name="groupBox_10">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>89</y>
+          <width>681</width>
+          <height>71</height>
+         </rect>
+        </property>
+        <property name="title">
+         <string>GroupBox</string>
+        </property>
+        <widget class="QLabel" name="label_2">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>30</y>
+           <width>61</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Thông kê:</string>
+         </property>
+        </widget>
+        <widget class="QComboBox" name="cbxTK">
+         <property name="geometry">
+          <rect>
+           <x>80</x>
+           <y>30</y>
+           <width>191</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(255, 255, 255);</string>
+         </property>
+         <item>
+          <property name="text">
+           <string>Toàn bộ khối lượng giảng dạy</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Tạo TKB cho giảng viên</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Toàn bộ giảng viên</string>
+          </property>
+         </item>
+        </widget>
+        <widget class="QComboBox" name="txtmaGV_TK">
+         <property name="geometry">
+          <rect>
+           <x>340</x>
+           <y>30</y>
+           <width>141</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(255, 255, 255);</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_34">
+         <property name="geometry">
+          <rect>
+           <x>280</x>
+           <y>30</y>
+           <width>61</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Giảng viên:</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="btnThongKe_2">
+         <property name="geometry">
+          <rect>
+           <x>490</x>
+           <y>20</y>
+           <width>81</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+	color: rgb(39, 39, 39);
+	background-color: rgb(225, 225, 225);
+}</string>
+         </property>
+         <property name="text">
+          <string>Thống kê</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="btnXuatExcel">
+         <property name="geometry">
+          <rect>
+           <x>580</x>
+           <y>20</y>
+           <width>81</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+	color: rgb(39, 39, 39);
+	background-color: rgb(225, 225, 225);
+}</string>
+         </property>
+         <property name="text">
+          <string>Xuất Excel</string>
+         </property>
+        </widget>
        </widget>
       </widget>
      </widget>
